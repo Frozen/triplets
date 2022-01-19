@@ -30,8 +30,9 @@ func bruteforce(input []int) (int, [][3]int) {
 
 // assume that input is sorted
 // 1) Find first positive index
-// 2) check negative part
-// 3) check positive part
+// 2) check negative part with two negative numbers and one positive
+// 3) check positive part with two positive and one negative number
+
 func withSplit(input []int) (int, [][3]int) {
 	positiveIndex := 0
 	for n := range input {
